@@ -1,4 +1,4 @@
-package ra.jv240711_vuonghuythuan.model;
+package ra.jv240711_vuonghuythuan.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
