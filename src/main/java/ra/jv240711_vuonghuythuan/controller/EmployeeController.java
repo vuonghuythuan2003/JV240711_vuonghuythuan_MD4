@@ -64,6 +64,6 @@ public class EmployeeController {
             @RequestParam(defaultValue = "10") int size) {
 
         Page<EmployeeResponseDTO> employees = employeeService.searchEmployee(keyword, page, size);
-        return ResponseEntity.ok(employees);
+        return new ResponseEntity<>(employees, HttpStatus.OK);
     }
 }
